@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 	<TextView
 		android:text="次のページです3！"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/textView2" />
+		android:id="@+id/textView3" />
+
+	<TextView
+		android:text="このページは星を触ると動くよ(Animation Sample)"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView4" />
+
+	<TextView
+		android:text="タップで動く"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView5" />
+
+	<TextView
+		android:text="ロングタップで回転！"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView6" />
+
+	<ImageView
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:layout_width="150px"
+		android:layout_height="150px"
+		app:srcCompat="@android:drawable/btn_star_big_on"
+		android:id="@+id/imageStar" />
+
 </LinearLayout>

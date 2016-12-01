@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".SubActivity" />
         <activity android:name=".Sub2Activity"></activity>
+				<activity android:name=".Sub3Activity"></activity>
     </application>
 
 </manifest>
