@@ -13,6 +13,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button button_segue;
     private Button button_segue2;
+    private Button button_segue3;
     private ViewFlipper viewFlipper;
     private GestureDetector gestureDetector;
 
@@ -29,6 +30,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         button_segue2=(Button)findViewById(R.id.button_segue2);
         button_segue2.setOnClickListener(this);
+
+        button_segue3=(Button)findViewById(R.id.button_segue3);
+        button_segue3.setOnClickListener(this);
 
         viewFlipper = (ViewFlipper) findViewById(R.id.flipper);
         viewFlipper.setDisplayedChild(0);
@@ -55,6 +59,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         if(v==button_segue2){
             Intent intent = new Intent(this, Sub2Activity.class);
+            startActivityForResult(intent, 0);
+        }
+
+        if(v==button_segue3){
+            Intent intent = new Intent(this, Sub3Activity.class);
             startActivityForResult(intent, 0);
         }
 

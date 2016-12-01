@@ -16,59 +16,73 @@
         android:text="Hello World!!!!!"
         android:id="@+id/textView" />
 
-    <Button
-        android:text="次のページへ遷移2"
-        android:id="@+id/button_segue2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/button_segue"
-        android:layout_toEndOf="@+id/button_segue"
-        android:layout_marginTop="34dp">
-    </Button>
-
-    <Button
-        android:text="次のページへ遷移"
-        android:id="@+id/button_segue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button_segue2"
-        android:layout_alignBottom="@+id/button_segue2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-     </Button>
-
-    <ViewFlipper android:id="@+id/flipper" android:layout_marginTop="32dp"
+	<ViewFlipper android:id="@+id/flipper" android:layout_marginTop="32dp"
         android:layout_width="fill_parent" android:layout_height="fill_parent"
         android:layout_below="@+id/button_segue2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:inAnimation="@android:anim/fade_in">
-        <include android:id="@+id/firstlayout" layout="@layout/first" />
-        <include android:id="@+id/secondlayout" layout="@layout/second" />
-        <include android:id="@+id/thirdlayout" layout="@layout/third" />
-    </ViewFlipper>
 
-    <!--    <ProgressBar
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/checkBox"
-            android:layout_toEndOf="@+id/checkBox"
-            android:id="@+id/progressBar" />
+		<include android:id="@+id/thirdlayout" layout="@layout/third" />
 
-        <SeekBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/seekBar"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    -->
+		<include android:id="@+id/firstlayout" layout="@layout/first" />
+
+		<include android:id="@+id/secondlayout" layout="@layout/second" />
+	</ViewFlipper>
+
+	<Button
+        android:text="ページ1"
+        android:id="@+id/button_segue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/textView"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginTop="11dp">
+     </Button>
+
+	<Button
+        android:text="ページ2"
+        android:id="@+id/button_segue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+		android:layout_alignBaseline="@+id/button_segue"
+		android:layout_alignBottom="@+id/button_segue"
+		android:layout_toRightOf="@+id/button_segue"
+		android:layout_toEndOf="@+id/button_segue">
+    </Button>
+
+	<Button
+		android:text="ページ3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/button_segue3"
+		android:layout_above="@+id/flipper"
+		android:layout_toRightOf="@+id/button_segue2"
+		android:layout_toEndOf="@+id/button_segue2"
+		android:layout_marginLeft="17dp"
+		android:layout_marginStart="17dp" />
+
+	<!--    <ProgressBar
+          style="?android:attr/progressBarStyleLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/checkBox"
+          android:layout_toEndOf="@+id/checkBox"
+          android:id="@+id/progressBar" />
+
+      <SeekBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:id="@+id/seekBar"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true" />
+  -->
     
 </RelativeLayout>
